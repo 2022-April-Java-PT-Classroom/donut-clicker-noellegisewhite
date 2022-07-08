@@ -8,39 +8,48 @@
   <link rel="stylesheet" href="/resources/style.css">
   <title>Noelle - Donut Clicker</title>
 </head>
-<header class="nav-container">
-  <nav>
-    <button>About</button>
-    <button>Inspiration</button>
-    <button>Contact</button>
-  </nav>
-  <section>
-    <div id="about-text" class="about-text">
-      <h3>This is about</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
-    </div>
-    <div id="inspo-text" class="inspo-text">
-      <h3>This is inspiration</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
-    </div>
-    <div id="contact-text" class="contact-text">
-      <h3>This is contact</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
-    </div>
-  </section>
-</header>
 
-<body>
-  <main>
-    <h1 class="bake-count"></h1>
-    <button class="bake-button">Bake!</button>
-    <h3 class="click-value"></h3>
-    <button class="auto-button">AutoButton</button>
-    <h3 class="auto-count"></h3>
-    <button class="boost-button">BoostButton</button>
-    <h3 class="boost-count"></h3>
-  </main>
-</body>
+<div class="main-contain">
+  <header class="nav-container">
+    <nav>
+      <button class="nav-button"><a href="#">About</a></button>
+      <button class="nav-button"><a href="#">Company</a></button>
+      <button class="nav-button"><a href="#">Contact</a></button>
+      <button class="nav-button"><a href="#" class="reset-button">Reset</a></button>
+    </nav>
+    <section class="dropdown">
+      <div class="">
+        <h3>This is about</h3>
+        <p>fdsafsdafLorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
+      </div>
+      <div class="">
+        <h3>This is inspiration</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. fdsafdsa Temporibus, animi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
+      </div>
+      <div class="">
+        <h3>This is contact</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi!</p>
+      </div>
+    </section>
+  </header>
+
+  <body>
+    <main>
+      <h1 class="bake-count"></h1>
+      <h3 class="click-value"></h3>
+      <img class="bake-button" src="./resources/images/Donut.svg" width="30%">
+      <div class="button-contain">
+        <h3 class="auto-count"></h3>
+        <button id="auto" class="btn auto-button auto-on auto-off ">AutoButton</button>
+        <button id="boost" class="btn boost-button">BoostButton</button>
+        <h3 class="boost-count"></h3>
+      </div>
+    </main>
+  </body>
+</div>
 
 <script src="/src/main/Donut.js"></script>
 <script src="/src/main/app.js"></script>

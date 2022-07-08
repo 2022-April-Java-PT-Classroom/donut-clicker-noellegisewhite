@@ -39,8 +39,17 @@ class Donut {
             this.totalDonuts -= this.boostCost;
             this.totalBoostClicks++;
             this.boostCost = Math.round(this.boostCost * 1.1);
-            this.clickValue = parseFloat(Math.pow(this.exponent, this.totalBoostClicks).toFixed(1));
+            this.clickValue = (Math.pow(this.exponent, this.totalBoostClicks));
         }
+    }
+
+    resetGame() {
+        this.totalDonuts = 0;
+        this.totalAutoClickers = 0;
+        this.totalBoostClicks = 0;
+        this.autoCost = 100;
+        this.boostCost = 10;
+        this.clickValue = 1;
     }
 }
 
