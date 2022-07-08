@@ -1,5 +1,7 @@
 class Donut {
     // Constructor
+    // I was running into a ton of issues whenever I tried
+    // Encapsulating all the variables, which is why they're hard coded
     constructor() {
         this.totalDonuts = 0;
         this.totalAutoClickers = 0;
@@ -14,7 +16,7 @@ class Donut {
     // Methods
     makeDonuts() {
         if (this.totalBoostClicks < 1) {
-            this.totalDonuts += 50;
+            this.totalDonuts += 1;
         } else {
             this.totalDonuts += (1 + this.clickValue);
         }

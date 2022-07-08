@@ -44,7 +44,7 @@
 ### Iteration 4
 
 - [x] When you click the clicker button the Donut counter should change.
-- [ ] The Auto Clickers and Donut Multipliers purchase button should be grayed out and unresponsive if there are not enough donuts to buy the next item.
+- [x] The Auto Clickers and Donut Multipliers purchase button should be grayed out and unresponsive if there are not enough donuts to buy the next item.
 - [x] The Auto Clicker count and the Donut Multipliers count should be displayed.
 - [x] The clicker button should display the current value of each click.
 - [x] The Auto Clickers and Donut Multipliers price in clicks should be displayed.

@@ -9,10 +9,11 @@ const autoButton = (document.querySelector(".auto-button"));
 const boostButton = (document.querySelector(".boost-button"));
 const resetButton = (document.querySelector(".reset-button"));
 
-const navButton = (document.querySelectorAll(".nav-button"));
-
 // Navigation
-
+const navButton = (document.querySelectorAll(".nav-button"));
+const homeButton = (document.querySelector(".home-button"));
+const dropDown = (document.querySelector(".dropdown"));
+const dropText = (document.querySelectorAll(".dd-text"));
 
 // Counts
 const donutCount = (document.querySelector(".bake-count"));
@@ -27,7 +28,6 @@ updateCounts();
 bakeButton.addEventListener("click", () => {
   donutFactory.makeDonuts();
   updateCounts();
-
 });
 
 // Not sure how to get the timing intervals to not compound...but this is the best I could do
@@ -59,11 +59,22 @@ function autoMakeDonuts() {
 };
 
 // Nav Buttons =======================================
+homeButton.addEventListener("click", () => {
+  dropDown.style.display = "none";
+  dropText.style.display = "none";
+});
+
 navButton.forEach(function (button, button_index) {
   button.addEventListener("click", () => {
-    console.log(button);
-    console.log(button_index);
-  });
+    dropText.forEach(function (content, content_index) {
+      if (button_index == content_index) {
+        dropDown.style.display = "block";
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    })
+  })
 });
 
 resetButton.addEventListener("click", () => {
@@ -75,31 +86,22 @@ resetButton.addEventListener("click", () => {
 });
 
 // Cosmetics =========================================
-function showAbout() {
-  aboutText.style.visibility = "visible";
-  console.log("this is working");
-};
-
-function showCompany() {
-  document.getElementById("inspo-text").classList.toggle("show");
-};
-
-function showContact() {
-  document.getElementById("contact-text").classList.toggle("show");
-};
-
+// Haven't figured out how to set an empty event listerner for the tick only
+// Any advice would be greatly appreciated!
 function changeAutoDisplay() {
   if (donutFactory.totalDonuts >= donutFactory.autoCost) {
-    document.getElementById("auto").style.backgroundColor = "#BDE0FE";
+    document.getElementById("auto").style.backgroundColor = "#A2D2FF";
   } else {
-    document.getElementById("auto").style.backgroundColor = "#999";
+    document.getElementById("auto").style.backgroundColor = "#BDE0FE";
+    autoButton.innerText = "Earn More Donuts To Upgrade";
   }
 };
 
 function changeBoostDisplay() {
   if (donutFactory.totalDonuts >= donutFactory.boostCost) {
-    document.getElementById("boost").style.backgroundColor = "#BDE0FE";
+    document.getElementById("boost").style.backgroundColor = "#FFAFCC";
   } else {
-    document.getElementById("boost").style.backgroundColor = "#999";
+    document.getElementById("boost").style.backgroundColor = "#FFC8DD";
+    boostButton.innerText = "Earn More Donuts To Upgrade";
   }
 };

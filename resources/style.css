@@ -43,13 +43,17 @@ nav {
     justify-content: space-evenly;
 }
 
+.home-button {
+    font-size: 20px;
+}
+
 nav button {
     width: 100%;
     height: 70px;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     background-color: var(--color-white);
     position: relative;
@@ -80,6 +84,38 @@ nav a:active {
     background-color: var(--color-pink-sub);
     color: var(--color-gray);
     padding: 40px;
+    display: none;
+}
+
+.dd-text {
+    display: none;
+}
+
+.cookie-link {
+    background-color: var(--color-white);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-purple-main);
+}
+
+.to-play {
+    font-weight: 700;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 28px;
+}
+
+.social p {
+    margin: 20px 0;
+}
+
+.social p a {
+    padding: 8px 30px;
 }
 
 main {
