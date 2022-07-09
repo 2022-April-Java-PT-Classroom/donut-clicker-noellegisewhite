@@ -1,5 +1,54 @@
-# Basic Browser JavaScript - Donut Maker
+# Noelle's - Donut Maker
 
+<div id="top"></div>
+
+## Table Of Contents
+
+- <a href="#lang">Languages & Tech</a>
+- <a href="#about">About</a>
+- <a href="#demo">Demo</a>
+- <a href="#notes">Notes</a>
+- <a href="#resources">Resources</a>
+- <a href="#contact">Contact</a>
+
+<div id ="lang">
+
+## Languages & Technologies
+
+- Javascript
+- HTML / CSS
+- Node
+
+<!-- About -->
+<div id ="about">
+
+## About
+
+Donut Clicker is an idle incremental clicker game inspired by the popular Cookie Clickers Game.
+
+To Play: Simply click on the donuts to bake! Earn upgrades and multipliers after you've baked enough donuts.
+
+<p align="right">(<a href="#top">BACK TO TOP</a>)</p>
+
+<div id ="demo">
+
+## Demo & Screenshots
+
+<img src="resources/images/Donut-Screen.png">
+<br>
+<br>
+<p align="right">(<a href="#top">BACK TO TOP</a>)</p>
+<br>
+
+<div id="contact"></div>
+
+## Contact
+
+Email: <a href="mailto:noellegisewhite@gmail.com">Noellegisewhite@gmail.com</a>
+<br>LinkedIn: <a href="https://www.linkedin.com/in/noellegisewhite/"> Noelle Gisewhite</a>
+
+<p align="center">===================================================================</p>
+<br>
 ###### A tribute to [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/)
 
 [Donut Maker Requirements](https://wecancodeit-materials.netlify.app/exercises/mastery/cookie-click-counter-calamity/)
@@ -14,6 +63,9 @@
 
 - `npm test` will run your tests
 - `npm start` will spin up the application
+
+<p align="right">(<a href="#top">BACK TO TOP</a>)</p>
+
 
 ### Iteration 1
 
@@ -37,9 +89,9 @@
 - [x] Create a click count element.
 - [x] Create a section for the Auto Clickers.
 - [x] Create a section for the Donut Multipliers.
-- [ ] Create a header with a link to a drop down element with information about the Company.
-- [ ] Create a header with a link to the Inspiration of our game.
-- [ ] Create a header with a link to a drop down element with information about the Developer.
+- [x] Create a header with a link to a drop down element with information about the Company.
+- [x] Create a header with a link to the Inspiration of our game.
+- [x] Create a header with a link to a drop down element with information about the Developer.
 
 ### Iteration 4
 
@@ -60,3 +112,6 @@
 - [ ] Purchasable background colors/images.
 - [ ] Add sound.
 - [ ] Adapt the requirements.
+
+<p align="right">(<a href="#top">BACK TO TOP</a>)</p>
+
