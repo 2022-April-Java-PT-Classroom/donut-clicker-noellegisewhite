@@ -43,8 +43,8 @@ boostButton.addEventListener("click", () => {
 });
 
 function updateCounts() {
-  donutCount.innerText = "total donuts: " + donutFactory.totalDonuts;
-  clickValue.innerText = "click value: " + donutFactory.clickValue;
+  donutCount.innerText = "total donuts: " + (donutFactory.totalDonuts.toFixed(2));
+  clickValue.innerText = "click value: " + (donutFactory.clickValue.toFixed(2));
   autoCount.innerText = "total auto clickers: " + donutFactory.totalAutoClickers;
   boostCount.innerText = "total boost packs: " + donutFactory.totalBoostClicks;
   autoButton.innerText = "Buy Auto Clicker For: " + donutFactory.autoCost + " Donuts";
@@ -55,7 +55,7 @@ function updateCounts() {
 
 function autoMakeDonuts() {
   donutFactory.totalDonuts += (donutFactory.totalAutoClickers * donutFactory.clickValue);
-  donutCount.innerText = "total donuts: " + donutFactory.totalDonuts;
+  updateCounts();
 };
 
 // Nav Buttons =======================================
@@ -86,8 +86,8 @@ resetButton.addEventListener("click", () => {
 });
 
 // Cosmetics =========================================
-// Haven't figured out how to set an empty event listerner for the tick only
-// Any advice would be greatly appreciated!
+// Haven't figured out how to set a 'non action' based event listerner for the auto tick
+// Any advice would be greatly appreciated! Maybe by using a set interval??
 function changeAutoDisplay() {
   if (donutFactory.totalDonuts >= donutFactory.autoCost) {
     document.getElementById("auto").style.backgroundColor = "#A2D2FF";
