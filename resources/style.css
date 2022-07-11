@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* ========================== VARIABLES ========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+}
+
+/* =========================== GLOBAL ============================ */
+
+:root {
+    --color-black: #0B0B0D;
+    --color-gray: #272932;
+    --color-light-gray: #999;
+    --color-pink-main: #FFAFCC;
+    --color-pink-sub: #FFC8DD;
+    --color-blue-main: #A2D2FF;
+    --color-blue-sub: #BDE0FE;
+    --color-purple-main: #CDB4DB;
+    --color-off-gray: #e7e7e7;
+    --color-off-white: #f8f8f8;
+    --color-white: #fff;
+
+    --color-grad: linear
+}
+
+.main-contain {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    border: 15px solid var(--color-pink-main);
+    border-radius: 20px;
+}
+
+/* ============================ NAV ============================== */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-button {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav button {
+    width: 100%;
+    height: 70px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+nav button::after {
+    content: '';
+    width: 100%;
+    height: 0.3rem;
+    left: 0;
+    bottom: 0;
+    background: var(--color-pink-sub);
+    position: absolute;
+}
+
+nav a {
+    color: var(--color-gray);
+    text-decoration: none;
+}
+
+nav a:active {
+    color: var(--color-blue-main);
+}
+
+.dropdown {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-pink-sub);
+    color: var(--color-gray);
+    padding: 40px;
+    display: none;
+}
+
+.dd-text {
+    display: none;
+}
+
+.cookie-link {
+    background-color: var(--color-white);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-purple-main);
+}
+
+.to-play {
+    font-weight: 700;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 28px;
+}
+
+.social p {
+    margin: 20px 0;
+}
+
+.social p a {
+    padding: 8px 30px;
+}
+
+main {
+    margin: auto;
+    display: block;
+    text-transform: uppercase;
+
+}
+
+.bake-count {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.click-value {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.donut-btn__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFAFCC;
+}
+
+.bake-button {
+    position: absolute;
+    display: block;
+    margin: 40px auto;
+    animation: grow 2s linear infinite;
+    cursor: url(./images/oven-mitt-outline.png), auto;
+}
+
+@keyframes grow {
+    0% {
+      width: 30%;
+    }
+    25% {
+        width: 29%;
+      }
+    50% {
+        width: 28%;
+    }
+    75% {
+        width: 29%;
+      }
+    100% {
+        width: 30%;
+    }
+  }
+
+.button-contain {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 350px;
+}
+
+.button-contain h3 {
+    margin: 15px;;
+}
+
+.btn {
+    width: 60%;
+    margin: 5px auto;
+    padding: 30px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+

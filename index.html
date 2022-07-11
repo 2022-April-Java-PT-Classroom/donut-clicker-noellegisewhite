@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/resources/style.css">
+  <link rel="icon" type="image/x-icon" href="./resources/images/Donut.svg">
+  <title>Noelle's Donut Clicker</title>
+</head>
+
+<div class="main-contain">
+  <header class="nav-container">
+    <nav>
+      <button class="home-button"><i class="fa-solid fa-house"></i></button>
+      <button class="nav-button"><a href="#">The Game</a></button>
+      <button class="nav-button"><a href="#">Company</a></button>
+      <button class="nav-button"><a href="#">Contact</a></button>
+      <button><a href="#" class="reset-button">Reset</a></button>
+    </nav>
+    <section class="dropdown">
+      <div class="dd-text">
+        <h3>About The Game</h3>
+        <p>Donut Clicker is an idle incremental clicker game inspired by the popular <a class="cookie-link"
+            href="https://orteil.dashnet.org/cookieclicker/">Cookie Clickers Game</a></p>
+        <br>
+        <p><span class="to-play">To Play:</span> Simply click on the donuts to bake! Earn upgrades and multipliers after
+          you've baked enough donuts.</p>
+      </div>
+      <div class="dd-text">
+        <h3>Fred the Baker Baking Company</h3>
+        <p>Fred the Baker is tired of making real donuts and is ready to retire. He needs our help to keep his love of
+          donuts alive. He wants you to create a game that uses button clicks to create virtual donuts for the world to
+          enjoy.</p>
+      </div>
+      <div class="dd-text">
+        <h3>Contact The Creator: Noelle Gisewhite</h3>
+        <div class="social">
+          <p><a class="cookie-link" href="https://www.linkedin.com/in/noellegisewhite/"><i
+                class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+          <p><a class="cookie-link" href="mailto:noellegisewhite@gmail.com"><i class="fa-solid fa-envelope"></i>
+              Email</a></p>
+          <p><a class="cookie-link" href="https://github.com/noellegisewhite"><i class="fa-brands fa-github"></i>
+              GitHub</a></p>
+        </div>
+      </div>
+    </section>
+  </header>
+
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <main>
+      <h1 class="bake-count"></h1>
+      <h3 class="click-value"></h3>
+      <div class="donut-btn__container">
+        <img class="bake-button" src="./resources/images/Donut.svg" max-width="30%">
+      </div>
+      <div class="button-contain">
+        <h3 class="auto-count"></h3>
+        <button id="auto" class="btn auto-button auto-on auto-off ">AutoButton</button>
+        <button id="boost" class="btn boost-button">BoostButton</button>
+        <h3 class="boost-count"></h3>
+      </div>
+    </main>
   </body>
+</div>
+
+<script src="/src/main/Donut.js"></script>
+<script src="/src/main/app.js"></script>
+<script src="https://kit.fontawesome.com/fa2ea675bd.js" crossorigin="anonymous"></script>
+
 </html>
